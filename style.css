@@ -1,0 +1,246 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} 
+
+body { 
+    background-color: rgb(178, 255, 23);
+    color: rgb(13, 131, 111);
+}
+
+h1 {
+    font-family:  'Arial', sans-serif;
+    font-size: 36px;
+    text-align: center,
+   
+} 
+
+p { 
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+    }
+  }
+
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  a {
+    color: rgb(0, 255, 149);
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: rgb(255, 140, 0);
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
+
+  /* <header> para darle un color de fondo y centrar su contenido en la página */
+
+header {
+  background-color: #333;
+  color: #ab09f6;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  height: 100px;
+}
+
+/*  <nav> para darle un estilo de lista y quitar los márgenes predeterminados */ 
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Agregar estilos a los elementos de la lista <li> para hacer que se muestren en línea y se separen entre sí */
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* gregar estilos a los enlaces <a> para darles un color y un estilo al pasar el cursor por encima. Puedes utilizar el siguiente código CSS y personalizarlo: */ 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+nav a:hover {
+  color: #1BF7DE;
+}
+
+/* cambia de color cuando se achica la pagina */
+
+@media (max-width: 767px) {
+  header {
+      background-color: #00f2ff; 
+  }
+    }
+
+/*  para cambiar el tamaño de fuente del texto de navegación en pantallas pequeñas agregar lo siguiente al final del archivo CSS: */
+
+@media (max-width: 767px) {
+  nav {
+  font-size: 12px;
+  }
+}
+
+/* ara adaptar el contenido a diferentes tamaños de pantalla. Por ejemplo, para ajustar el ancho del encabezado en pantallas grandes */
+
+@media (min-width: 1200px) {
+  header {
+      width: 100%;
+      }
+  }
+
+.imagen{ 
+  height: 100px;
+  width: 100px;
+}
+
+#boton {
+
+  font-family: 'Georgia', serif;
+  border-radius: 50px;
+  border-color: rgba(5, 10, 12, 0.741);
+  background-color: rgb(255, 250, 250);
+  
+  }
+  
+  #myForm {
+    width:300px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#0bedd6;
+  }
+  
+  #myForm {
+  width: 300px;
+  font-weight:bold;
+  display:inline-block;
+  }
+  
+
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}    
+
+main{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer{
+  height: 150px;
+  color: #1d201d46;
+  background-color: rgba(11, 252, 156, 0.663);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
